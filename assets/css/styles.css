@@ -235,6 +235,9 @@ h3 { margin-bottom: .6rem; font-size: 1.35rem; }
 .hero-pills span { padding: .4rem .72rem; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; color: #dce9ff; background: rgba(255,255,255,.07); font-size: .78rem; font-weight: 750; }
 
 .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.timing-mode-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.timing-mode-grid .feature-panel { padding: clamp(1.45rem, 3vw, 2.2rem); }
+.timing-mode-grid .feature-panel h3 { font-size: clamp(1.38rem, 2.1vw, 1.9rem); }
 .feature-panel { padding: clamp(1.7rem, 4vw, 2.7rem); border: 1px solid var(--line); border-radius: 30px; background: #f7f9fc; }
 .feature-panel h3 { font-size: clamp(1.65rem, 3vw, 2.35rem); }
 .feature-panel p, .feature-panel li { color: #40506a; }
