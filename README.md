@@ -25,6 +25,6 @@ Copy the `insideedgeride` directory as a starting point, rename it with a short 
 
 ## Before launch
 
-- Confirm `support@insideedge-studios.com` is active and monitored.
+- Confirm `insideedgedevstudios@gmail.com` is active and monitored.
 - Recheck the privacy policy against the shipping app and App Store privacy answers.
 - Replace or add the App Store button once the public App Store URL is known.
