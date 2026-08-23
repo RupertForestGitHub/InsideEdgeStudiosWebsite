@@ -329,6 +329,102 @@ h3 { margin-bottom: .6rem; font-size: 1.35rem; }
 .ride-step-list span, .ride-step-list em { color: #aebbd0; font-size: .76rem; font-style: normal; font-weight: 800; }
 .ride-step-list strong { color: var(--white); font-size: .86rem; }
 
+.ride-journey-section { background: var(--white); }
+.ride-journey { display: grid; gap: 1.35rem; }
+.ride-journey-item {
+  display: grid;
+  grid-template-columns: minmax(0, .88fr) minmax(320px, 1.12fr);
+  gap: clamp(1.2rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.1rem, 3vw, 1.8rem);
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: #f8fbff;
+}
+.ride-journey-item:nth-child(even) { grid-template-columns: minmax(320px, 1.12fr) minmax(0, .88fr); background: #ffffff; }
+.ride-journey-item:nth-child(even) .ride-journey-copy { order: 2; }
+.ride-journey-item:nth-child(even) .ride-demo-screen { order: 1; }
+.ride-journey-copy > span {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  background: var(--navy);
+  color: var(--white);
+  font-size: .78rem;
+  font-weight: 900;
+}
+.ride-journey-copy h3 { font-size: clamp(1.45rem, 2.5vw, 2.15rem); }
+.ride-journey-copy p:not(.card-kicker) { margin-bottom: 0; color: var(--muted); }
+.ride-demo-screen {
+  display: grid;
+  gap: .85rem;
+  min-height: 330px;
+  padding: 1rem;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 28px;
+  color: var(--white);
+  background: linear-gradient(155deg, #061731, #0a376e);
+  box-shadow: 0 18px 44px rgba(7,22,48,.12);
+}
+.ride-light-demo { border-color: var(--line); color: var(--ink); background: var(--white); }
+.ride-demo-header { display: grid; gap: .25rem; padding: 1rem; border-radius: 20px; background: linear-gradient(135deg, #071630, #0b4bb3); }
+.ride-demo-header span, .ride-demo-header em { color: #aebbd0; font-size: .78rem; font-style: normal; font-weight: 800; }
+.ride-demo-header strong { color: var(--white); font-size: 1.2rem; }
+.ride-demo-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: .65rem; }
+.ride-demo-metrics div, .ride-action-grid div, .ride-form-row, .ride-profile-result, .ride-calc-display, .ride-calc-result, .ride-plan-list div, .ride-knowledge-list div, .ride-hr-check, .ride-status-row {
+  padding: .78rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,.08);
+}
+.ride-light-demo .ride-form-row, .ride-light-demo .ride-profile-result, .ride-light-demo .ride-calc-display, .ride-light-demo .ride-calc-result, .ride-light-demo .ride-plan-list div { background: #eef4fb; }
+.ride-demo-metrics span, .ride-action-grid span, .ride-form-row label, .ride-profile-result span, .ride-profile-result em, .ride-calc-display span, .ride-calc-display em, .ride-calc-result span, .ride-plan-list span, .ride-plan-list em, .ride-knowledge-list span, .ride-live-number span, .ride-live-number em, .ride-hr-check span, .ride-status-row strong, .ride-status-row em {
+  color: #aebbd0;
+  font-size: .76rem;
+  font-style: normal;
+  font-weight: 800;
+}
+.ride-light-demo .ride-form-row label, .ride-light-demo .ride-profile-result span, .ride-light-demo .ride-profile-result em, .ride-light-demo .ride-calc-display span, .ride-light-demo .ride-calc-display em, .ride-light-demo .ride-calc-result span, .ride-light-demo .ride-plan-list span, .ride-light-demo .ride-plan-list em { color: var(--muted); }
+.ride-demo-metrics strong, .ride-action-grid strong, .ride-form-row strong, .ride-profile-result strong, .ride-calc-result strong, .ride-plan-list strong, .ride-knowledge-list strong, .ride-hr-check strong, .ride-status-row em { color: var(--white); }
+.ride-light-demo .ride-form-row strong, .ride-light-demo .ride-profile-result strong, .ride-light-demo .ride-calc-result strong, .ride-light-demo .ride-plan-list strong { color: var(--navy); }
+.ride-action-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .65rem; }
+.ride-status-row { display: grid; grid-template-columns: 12px 1fr auto; gap: .65rem; align-items: center; }
+.ride-status-row span { width: 10px; height: 10px; border-radius: 999px; background: #28c76f; }
+.ride-form-row { display: flex; justify-content: space-between; align-items: center; }
+.ride-profile-result { display: grid; gap: .25rem; text-align: center; }
+.ride-profile-result strong { font-size: 1.9rem; }
+.ride-zone-matrix, .ride-plan-list, .ride-knowledge-list { display: grid; gap: .62rem; }
+.ride-zone-matrix { grid-template-columns: repeat(2, 1fr); }
+.ride-zone-matrix div { display: grid; gap: .18rem; padding: .68rem; border-radius: 14px; background: rgba(255,255,255,.08); }
+.ride-zone-matrix span { color: #7fb2ff; font-weight: 900; }
+.ride-zone-matrix strong { color: var(--white); font-size: .86rem; }
+.ride-zone-matrix em { color: #aebbd0; font-size: .72rem; font-style: normal; font-weight: 800; }
+.ride-calc-display { display: grid; gap: .25rem; text-align: center; }
+.ride-calc-display strong { color: var(--navy); font-size: 3.2rem; line-height: 1; }
+.ride-calc-result { display: grid; gap: .2rem; text-align: center; }
+.ride-calc-scale { display: grid; grid-template-columns: repeat(5, 1fr); gap: .3rem; align-items: end; min-height: 80px; }
+.ride-calc-scale span { border-radius: 10px 10px 3px 3px; background: #5fb2ff; }
+.ride-calc-scale span:nth-child(1) { height: 35%; background: #8b95a5; }
+.ride-calc-scale span:nth-child(2) { height: 52%; background: #28c76f; }
+.ride-calc-scale span:nth-child(3) { height: 70%; background: #f4c542; }
+.ride-calc-scale span:nth-child(4) { height: 92%; background: #ff8a1f; }
+.ride-calc-scale span:nth-child(5) { height: 60%; background: #ff4d5e; }
+.ride-live-number { display: grid; gap: .25rem; padding: 1rem; border-radius: 20px; text-align: center; background: rgba(255,255,255,.08); }
+.ride-live-number strong { color: var(--white); font-size: 3.4rem; line-height: 1; }
+.ride-hr-check { display: grid; gap: .2rem; }
+.ride-hr-check strong { color: #28c76f; }
+.ride-trace { display: grid; grid-template-columns: repeat(7, 1fr); gap: .35rem; align-items: end; height: 88px; }
+.ride-trace i { display: block; border-radius: 10px 10px 3px 3px; background: linear-gradient(180deg, #ff4d5e, #5fb2ff); }
+.ride-trace i:nth-child(1) { height: 42%; }
+.ride-trace i:nth-child(2) { height: 64%; }
+.ride-trace i:nth-child(3) { height: 54%; }
+.ride-trace i:nth-child(4) { height: 86%; }
+.ride-trace i:nth-child(5) { height: 72%; }
+.ride-trace i:nth-child(6) { height: 58%; }
+.ride-trace i:nth-child(7) { height: 78%; }
+
 .timing-hero {
   background:
     radial-gradient(circle at 82% 26%, rgba(255,40,56,.24), transparent 25rem),
@@ -440,6 +536,8 @@ h3 { margin-bottom: .6rem; font-size: 1.35rem; }
   .studio-art { width: min(430px, 90vw); grid-row: 1; }
   .ride-art { width: min(340px, 84vw); grid-row: 1; }
   .ride-ui-grid { grid-template-columns: 1fr; }
+  .ride-journey-item, .ride-journey-item:nth-child(even) { grid-template-columns: 1fr; }
+  .ride-journey-item:nth-child(even) .ride-journey-copy, .ride-journey-item:nth-child(even) .ride-demo-screen { order: initial; }
   .studio-hero .hero-grid { min-height: auto; }
   .values-grid, .values-grid.three-values { grid-template-columns: repeat(2, 1fr); }
   .values-grid > div:nth-child(odd) { border-left: 1px solid var(--line); }
@@ -473,6 +571,10 @@ h3 { margin-bottom: .6rem; font-size: 1.35rem; }
   .ride-power-card strong, .ride-trainer-target strong { font-size: 3rem; }
   .ride-metric-grid { grid-template-columns: 1fr; }
   .ride-zone-list div, .ride-step-list div { grid-template-columns: 1fr; gap: .25rem; }
+  .ride-demo-metrics, .ride-action-grid, .ride-zone-matrix { grid-template-columns: 1fr; }
+  .ride-status-row { grid-template-columns: 12px 1fr; }
+  .ride-status-row em { grid-column: 2; }
+  .ride-calc-display strong, .ride-live-number strong { font-size: 2.6rem; }
   .spec-list > div { grid-template-columns: 1fr; gap: .1rem; }
 }
 
