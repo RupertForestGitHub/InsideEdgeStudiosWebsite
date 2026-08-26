@@ -51,7 +51,7 @@
         <div class="screen-showcase" aria-label="Inside Edge Timing screenshots">
           <figure class="screen-card"><img src="../assets/images/IET-IntervalsTimerScreen.png" width="831" height="1800" loading="lazy" alt="Intervals Timer screen showing a 45 second interval countdown"><figcaption><strong>Intervals Timer</strong><span>Large countdown, current set, interval number, beat control and session progress.</span></figcaption></figure>
           <figure class="screen-card"><img src="../assets/images/IET-SplitsTimerScreen.png" width="831" height="1800" loading="lazy" alt="Splits Timer screen showing saved training splits"><figcaption><strong>Splits Timer</strong><span>Capture repeated splits, add notes and save or share the training record.</span></figcaption></figure>
-          <figure class="screen-card"><img src="../assets/images/IET-RaceTimerScreen1.png" width="831" height="1800" loading="lazy" alt="Race Timer screen showing competition details and finish order"><figcaption><strong>Race Timer setup</strong><span>Competition, date, race number, skater list refresh and live finish capture.</span></figcaption></figure>
+          <figure class="screen-card"><img src="../assets/images/IET-RaceTimerScreen1.png" width="831" height="1800" loading="lazy" alt="Race Timer screen showing competition details and finish order"><figcaption><strong>Race Timer setup</strong><span>Competition, date, distance, race number, cached roster status and live finish capture.</span></figcaption></figure>
           <figure class="screen-card"><img src="../assets/images/IET-RaceTimerScreen2.png" width="831" height="1800" loading="lazy" alt="Race Timer screen showing saved race finish order"><figcaption><strong>Finish order</strong><span>Record 1st, 2nd, 3rd and later finishers with race numbers, names, times and gaps.</span></figcaption></figure>
         </div>
       </div>
@@ -71,13 +71,13 @@
             <p class="card-kicker">Splits Timer</p>
             <h3>A coach-friendly stopwatch for training repetitions.</h3>
             <p>Use Splits Timer when you need a clean stopwatch with repeated captures: laps, drills, flying efforts, repeated starts or groups crossing a marker at different times.</p>
-            <ul class="feature-list"><li>Large digital or analog stopwatch display</li><li>Capture split and cumulative time</li><li>Add quick notes to recorded splits</li><li>Save and share completed split sessions</li><li>Designed for iPhone and iPad use at rinkside, trackside or courtside</li></ul>
+            <ul class="feature-list"><li>Large digital or analog stopwatch display</li><li>Capture split and cumulative time in a session independent from Race Timer</li><li>Add quick notes to recorded splits</li><li>Save and share completed split sessions</li><li>Designed for iPhone and iPad use at rinkside, trackside or courtside</li></ul>
           </article>
           <article class="feature-panel">
             <p class="card-kicker">Race Timer</p>
             <h3>Finish-order recording for real event pressure.</h3>
             <p>Race Timer is built for the practical manual timing situations many clubs still rely on: start the race, tap each finisher, add race numbers, then save or share the result before the next race rolls around.</p>
-            <ul class="feature-list"><li>Record 1st, 2nd, 3rd and later finishers in order</li><li>Show total race time and gap to the winner</li><li>Store competition, date and race number with every race</li><li>Auto-fill skater details from a cached race-number list where available</li><li>Manual fallback for late entries, guest skaters or roster changes</li><li>Save races locally, auto-advance race numbers and export race or competition history</li></ul>
+            <ul class="feature-list"><li>Record 1st, 2nd, 3rd and later finishers in order</li><li>Show total race time and gap to the winner</li><li>Store competition, date, distance and race number with every race</li><li>Auto-fill skater details from a locally cached race-number list, even when the connection is unavailable</li><li>Warn before recording the same athlete number twice, with an explicit Record Again option</li><li>Save races locally, auto-advance race numbers and export race or competition history</li></ul>
           </article>
         </div>
       </div>
@@ -103,7 +103,7 @@
         <div class="cards">
           <article class="card"><p class="card-kicker">Heart rate</p><h3>Live Bluetooth HRM support</h3><p>Connect a compatible Bluetooth heart-rate monitor and view live BPM during training. Enter your lactate-threshold heart rate so the app can show personalised LTHR zones.</p></article>
           <article class="card"><p class="card-kicker">Zones</p><h3>LTHR-based effort guide</h3><p>See Active Recovery, Endurance, Tempo, Sweet Spot, Lactate Threshold, VO2 Max and Anaerobic Capacity ranges calculated from your own threshold value.</p></article>
-          <article class="card"><p class="card-kicker">History</p><h3>Workout and race records</h3><p>Save interval completion reports, split sessions and race results locally. Add effort scores and notes, then share reports through the standard iOS share sheet.</p></article>
+          <article class="card"><p class="card-kicker">History</p><h3>Workout and race records</h3><p>Save interval completion reports, independent split sessions and race results with distance locally. Add effort scores and notes, then share reports through the standard iOS share sheet.</p></article>
         </div>
       </div>
     </section>
@@ -112,9 +112,9 @@
       <div class="wrap">
         <div class="section-heading"><p class="eyebrow">Race-day workflow</p><h2>Built for the two-minute gap before the next race.</h2></div>
         <ol class="steps">
-          <li><span>01</span><div><h3>Prepare the event</h3><p>Enter the competition name and date once. Race Timer keeps that context available while you move through the programme.</p></div></li>
+          <li><span>01</span><div><h3>Prepare the event</h3><p>Enter the competition name, date and race distance once. Race Timer keeps that context available while you move through the programme.</p></div></li>
           <li><span>02</span><div><h3>Start and capture</h3><p>Start the clock, then tap Record Finisher as each athlete crosses the line. The app keeps finish order, total time and gaps together.</p></div></li>
-          <li><span>03</span><div><h3>Add skater details quickly</h3><p>Type the race number and, where the cached roster matches, the app fills in name, category and club. You can still edit manually at any time.</p></div></li>
+          <li><span>03</span><div><h3>Add skater details quickly</h3><p>Type the race number and, where the cached roster matches, the app fills in name, category and club. If that number is already recorded in the race, confirm before recording the athlete again.</p></div></li>
           <li><span>04</span><div><h3>Save and move on</h3><p>Save the race, let the race number advance, then share a single race or export the wider competition group when needed.</p></div></li>
         </ol>
       </div>
@@ -125,7 +125,7 @@
         <div>
           <p class="eyebrow">Current release</p>
           <h2>Version 1.0 (4)</h2>
-          <p class="release-copy">The current Inside Edge Timing foundation brings structured interval sessions, training split capture, race finish-order recording, Bluetooth heart-rate context, LTHR zones, local history and practical sharing into one coherent iPhone and iPad app.</p>
+          <p class="release-copy">The current Inside Edge Timing foundation brings structured interval sessions, training split capture, race finish-order recording, Bluetooth heart-rate context, LTHR zones, local history, distance-aware race records and practical sharing into one coherent iPhone and iPad app.</p>
           <a class="text-link" href="support/">Read the complete support guide &rarr;</a>
         </div>
         <div class="spec-card">

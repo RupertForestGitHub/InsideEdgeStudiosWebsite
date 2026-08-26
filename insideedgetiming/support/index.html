@@ -38,13 +38,13 @@
           <p>Keep iOS notification, volume, Focus and silent-mode behaviour in mind. Test the selected cue in the real venue before relying on it for a group session.</p>
 
           <h2 id="splits">Using Splits Timer</h2>
-          <p>Use Splits Timer when you need successive splits and cumulative times. Start the clock, capture each athlete or lap as required, then pause or reset at the end. Each saved split can include an editable note, making it possible to attach a name, lap number or coaching observation.</p>
+          <p>Use Splits Timer when you need successive splits and cumulative times. Start the clock, capture each athlete or lap as required, then pause or reset at the end. Each saved split can include an editable note, making it possible to attach a name, lap number or coaching observation. Splits Timer keeps its clock, captures and notes independent from Race Timer.</p>
           <p>Completed split sessions can be saved locally and shared through the standard iOS share sheet.</p>
 
           <h2 id="race">Using Race Timer</h2>
-          <p>Use Race Timer when the order across the line matters. Each capture records the finishing position, total time and gap relative to the leader. Add competition, date and race-number context so the result remains useful after the race has finished.</p>
-          <p>Race Timer can use a cached race-number list to fill skater name, category and club after you enter the race number. If the list is unavailable, out of date or does not contain the athlete, you can enter the details manually.</p>
-          <p>Save Race stores the result locally, acknowledges the save and advances the race number to reduce repeated data entry. Review the order before sharing. Results can be shared as text using the standard iOS share sheet.</p>
+          <p>Use Race Timer when the order across the line matters. Each capture records the finishing position, total time and gap relative to the leader. Add competition, date, race distance and race-number context so the result remains useful after the race has finished.</p>
+          <p>Race Timer can use a cached race-number list to fill skater name, category and club after you enter the race number. The last valid list is cached locally and remains available if the connection fails; automatic refreshes use the server timestamp and only replace the cache after valid data is received. The roster status shows the last successful update date and time. If the list does not contain the athlete, you can enter the details manually.</p>
+          <p>If a race number has already been assigned to another finisher in the current race, the app asks whether to cancel or record that athlete again. Save Race stores the result locally under competition, date, distance and race number, acknowledges the save and advances the race number to reduce repeated data entry. Review the order before sharing. Results can be shared as text using the standard iOS share sheet.</p>
           <div class="notice"><strong>Official-results notice:</strong> Inside Edge Timing supports coaching, training and informal event organisation. It is not certified photo-finish or official electronic timing equipment.</div>
 
           <h2 id="heart-rate">Connecting a heart-rate monitor</h2>
@@ -55,7 +55,7 @@
 
           <h2 id="history">Training history, effort and reports</h2>
           <p>Completed interval sessions are retained locally on the device, up to the app's current history limit. Entries include date and time, activity category, elapsed training time and interval information. Completion detail helps distinguish completed, shortened or skipped parts of a set.</p>
-          <p>Saved split sessions and Race Timer results are also stored locally. Race results are grouped by competition and date so a timekeeper can return to an event, review each race and export a single race or wider competition group.</p>
+          <p>Saved split sessions and Race Timer results are also stored locally. Race results are grouped by competition and date, with distance and race number identifying each result, so a timekeeper can return to an event, review each race and export a single race or wider competition group.</p>
           <p>Add a perceived-effort rating from 1 to 10 and optional notes after training. Reports can then be shared through iOS. Sharing occurs only when you choose it, and the selected destination controls what happens to the exported content.</p>
 
           <h2 id="troubleshooting">Troubleshooting</h2>
