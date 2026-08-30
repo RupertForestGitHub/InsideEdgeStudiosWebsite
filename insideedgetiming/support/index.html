@@ -13,13 +13,13 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../../">Inside Edge <span>Studios</span></a><div class="nav-links"><a href="../">Inside Edge Timing</a><a href="../privacy/">Privacy</a></div></nav></header>
   <main id="main">
-    <section class="page-hero"><div class="wrap"><p class="eyebrow">Inside Edge Timing · Version 1.0 (4)</p><h1>Support</h1><p class="page-intro">A detailed guide to Intervals Timer, Splits Timer, Race Timer, heart-rate data, saved history and sharing results.</p></div></section>
+    <section class="page-hero"><div class="wrap"><p class="eyebrow">Inside Edge Timing · Version 1.0 (4)</p><h1>Support</h1><p class="page-intro">A detailed guide to Intervals Timer, Splits Timer, Race Timer, Fitness Tests, heart-rate data, saved history and sharing results.</p></div></section>
     <section class="section white">
       <div class="wrap content-layout support-layout">
-        <nav class="side-nav" aria-label="On this page"><a href="#quick-start">Quick start</a><a href="#intervals">Intervals</a><a href="#live-session">Live session</a><a href="#splits">Splits</a><a href="#race">Race Timer</a><a href="#heart-rate">Heart rate</a><a href="#history">History</a><a href="#troubleshooting">Troubleshooting</a><a href="#contact">Contact</a></nav>
+        <nav class="side-nav" aria-label="On this page"><a href="#quick-start">Quick start</a><a href="#intervals">Intervals</a><a href="#live-session">Live session</a><a href="#splits">Splits</a><a href="#race">Race Timer</a><a href="#fitness-tests">Fitness Tests</a><a href="#heart-rate">Heart rate</a><a href="#history">History</a><a href="#troubleshooting">Troubleshooting</a><a href="#contact">Contact</a></nav>
         <div class="prose">
           <h2 id="quick-start">Quick start</h2>
-          <p>Inside Edge Timing has three primary working areas: <strong>Intervals Timer</strong> for planned work-and-recovery sessions, <strong>Splits Timer</strong> for training split capture, and <strong>Race Timer</strong> for recording finish order, gaps and race context. Select the mode that matches the job before the session begins.</p>
+          <p>Inside Edge Timing has four primary working areas: <strong>Intervals Timer</strong> for planned work-and-recovery sessions, <strong>Splits Timer</strong> for training split capture, <strong>Race Timer</strong> for recording finish order, gaps and race context, and <strong>Fitness Tests</strong> for conducting and recording the L&eacute;ger 20m multistage fitness test. Select the mode that matches the job before the session begins.</p>
           <div class="notice"><strong>Rinkside tip:</strong> prepare the session, athlete information and sound settings before stepping onto the ice. Keep the device secure, audible and within comfortable reach.</div>
 
           <h2 id="intervals">Building an interval session</h2>
@@ -47,6 +47,19 @@
           <p>If a race number has already been assigned to another finisher in the current race, the app asks whether to cancel or record that athlete again. Save Race stores the result locally under competition, date, distance and race number, acknowledges the save and advances the race number to reduce repeated data entry. Review the order before sharing. Results can be shared as text using the standard iOS share sheet.</p>
           <div class="notice"><strong>Official-results notice:</strong> Inside Edge Timing supports coaching, training and informal event organisation. It is not certified photo-finish or official electronic timing equipment.</div>
 
+          <h2 id="fitness-tests">Running the 20m multistage fitness test</h2>
+          <h3>Prepare the course and athletes</h3>
+          <p>Measure a flat, non-slip 20-metre course and mark both turning lines clearly. Give athletes an appropriate warm-up and explain that they must reach the opposite line at each cue. In Fitness Tests, name and date the session, then add up to four athletes. Entering age lets the report use the appropriate VO2 estimation method.</p>
+          <h3>Follow the L&eacute;ger protocol</h3>
+          <p>The built-in 20m MSFT begins at 8.5 km/h and increases by 0.5 km/h at every new level. A single cue marks each shuttle and a triple cue announces the next level. The live display shows level, shuttle, required speed, time to the next cue, elapsed time and accumulated distance.</p>
+          <h3>Record an athlete's result</h3>
+          <p>Use the miss control when an athlete fails to reach the line in time. The first miss creates a warning that can be cleared if the athlete recovers; a second miss records the result at the last successfully completed shuttle. Alternatively, use <strong>Stop &amp; Record</strong> to end and record an individual athlete directly. The overall test stops automatically when every athlete has a recorded result.</p>
+          <h3>Understand the result</h3>
+          <p>Each result records the final level and shuttle, total completed shuttles, run time, distance covered and final speed. For ages 8&ndash;19, the app applies the L&eacute;ger age-aware VO2 equation. Adult results use the L&eacute;ger speed-based estimate. VO2 is an estimate derived from field-test performance, not a direct laboratory measurement or medical assessment.</p>
+          <h3>Save, print and share</h3>
+          <p>Save the completed session to Fitness Test History. The Export menu creates a formatted PDF report, a CSV file for analysis or record keeping, and a quick-text summary. The standard iOS share sheet can then email, print, save or send the selected export using compatible apps and services installed on the device.</p>
+          <div class="notice"><strong>Safety note:</strong> The 20m MSFT is a maximal progressive running test. It should be appropriately supervised and used only where the participant is fit to undertake maximal exercise. Stop the test if a participant becomes unwell, shows concerning symptoms or cannot continue safely.</div>
+
           <h2 id="heart-rate">Connecting a heart-rate monitor</h2>
           <p>Inside Edge Timing supports monitors that broadcast the standard Bluetooth Heart Rate Service. Wake and wear the sensor, enable Bluetooth for the app in iOS Settings, then begin discovery from the heart-rate area. Keep the sensor close to the iPhone or iPad during connection.</p>
           <p>When connected, live beats per minute and connection status are displayed. You can enter a lactate-threshold heart rate (LTHR) so the app can place the current reading into a relative training zone. This provides training context only and is not medical advice or a diagnosis.</p>
@@ -55,7 +68,7 @@
 
           <h2 id="history">Training history, effort and reports</h2>
           <p>Completed interval sessions are retained locally on the device, up to the app's current history limit. Entries include date and time, activity category, elapsed training time and interval information. Completion detail helps distinguish completed, shortened or skipped parts of a set.</p>
-          <p>Saved split sessions and Race Timer results are also stored locally. Race results are grouped by competition and date, with distance and race number identifying each result, so a timekeeper can return to an event, review each race and export a single race or wider competition group.</p>
+          <p>Saved split sessions, Race Timer results and Fitness Test sessions are also stored locally. Race results are grouped by competition and date; Fitness Test History retains each athlete's score, distance, final speed and estimated VO2 for later review and PDF, CSV or text export.</p>
           <p>Add a perceived-effort rating from 1 to 10 and optional notes after training. Reports can then be shared through iOS. Sharing occurs only when you choose it, and the selected destination controls what happens to the exported content.</p>
 
           <h2 id="troubleshooting">Troubleshooting</h2>
