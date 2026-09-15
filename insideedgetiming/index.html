@@ -19,7 +19,7 @@
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
       <a class="brand studio-brand" href="../"><img src="../assets/images/inside-edge-studios-logo.png" alt="" width="34" height="34"><span>Inside Edge</span></a>
-      <div class="nav-links app-nav"><a aria-current="page" href="./">Home &ndash; Timing</a><a href="#walkthrough">How it works</a><a href="support/">Support</a><a href="privacy/">Privacy</a></div>
+      <div class="nav-links app-nav timing-page-nav"><a aria-current="page" href="./">Timing Home</a><a href="intervals/">Intervals</a><a href="splits/">Splits</a><a href="race/">Race</a><a href="fitness-tests/">Fitness Tests</a><a href="support/">Support</a></div>
     </nav>
   </header>
   <main id="main">
@@ -29,7 +29,7 @@
           <p class="eyebrow">Inside Edge Timing &middot; Version 1.0 (4)</p>
           <h1>Timing, race capture and fitness testing in one sport-ready app.</h1>
           <p class="hero-copy">Built from the knowledge of world-class athletes and coaches from Short Track Speed Skating, Inside Edge Timing gives athletes, coaches and sport officials a practical toolkit for structured training, live splits, finish-order capture and the L&eacute;ger 20m multistage fitness test.</p>
-          <div class="actions"><a class="button" href="#walkthrough">See how it works</a><a class="button secondary" href="#features">Explore the timing tools</a></div>
+          <div class="actions"><a class="button" href="#modes">Explore the four modes</a><a class="button secondary" href="support/">Support</a></div>
           <div class="hero-pills" aria-label="Key capabilities"><span>Intervals Timer</span><span>Splits Timer</span><span>Race Timer</span><span>Fitness Tests</span></div>
         </div>
         <div class="app-art timing-art hero-screen-art"><img class="hero-screen" src="../assets/images/IET-OpeningSplash.png" width="1170" height="2532" alt="New Inside Edge Timing opening splash screen showing Intervals, Race Mode and Fitness"></div>
@@ -40,98 +40,26 @@
       <div class="wrap values-grid">
         <div><strong>Plan</strong><span>Multi-set work and recovery sessions</span></div>
         <div><strong>Coach</strong><span>Splits, notes and live progress</span></div>
-        <div><strong>Record</strong><span>Race finish order, gaps and skater details</span></div>
+        <div><strong>Record</strong><span>Start lists, race finish order, gaps and skater details</span></div>
         <div><strong>Test</strong><span>20m MSFT scores and VO2 estimates</span></div>
       </div>
     </section>
 
-    <section class="section fitness-test-section" id="fitness-tests">
-      <div class="wrap">
-        <div class="fitness-test-intro">
-          <div>
-            <p class="eyebrow">New &middot; 20m multistage fitness test</p>
-            <h2>The recognised L&eacute;ger protocol, guided and recorded from one screen.</h2>
-          </div>
-          <div class="prose compact-prose">
-            <p>Inside Edge Timing now runs the 20-metre multistage fitness test (20m MSFT), often known as the bleep or beep test. The protocol originates from the work of Luc L&eacute;ger and colleagues and is widely used to assess aerobic fitness through progressively faster shuttle running.</p>
-            <p>Set two lines 20 metres apart, add up to four athletes with their ages, then start the test. Athletes reach the opposite line at each single cue. A triple cue announces a new level; speed begins at 8.5 km/h and rises by 0.5 km/h with every level.</p>
-          </div>
-        </div>
-
-        <div class="test-proof-grid" aria-label="Inside Edge Timing fitness test screenshots">
-          <figure class="screen-card"><img src="../assets/images/IET-BleepTestSetup.png" width="1170" height="2532" loading="lazy" alt="20m bleep test setup with test date, athlete name and age entry"><figcaption><strong>Set up the test</strong><span>Name and date the session, then add up to four athletes. Age is retained with each result and used by the appropriate VO2 estimation method.</span></figcaption></figure>
-          <figure class="screen-card"><img src="../assets/images/IET-BleepTestInAction.png" width="1170" height="2532" loading="lazy" alt="L&eacute;ger 20m bleep test running at level 6 with athlete miss and stop-and-record controls"><figcaption><strong>Coach it live</strong><span>See the current level, shuttle, speed, next cue, elapsed time and distance. Track misses or stop and record each athlete independently.</span></figcaption></figure>
-          <figure class="screen-card"><img src="../assets/images/IET-BleepTestResults.png" width="1170" height="2532" loading="lazy" alt="Recorded bleep test results showing athlete ages, levels, distance, final speed and estimated VO2"><figcaption><strong>Keep useful results</strong><span>Results include score, run time, shuttles, distance, final speed and estimated VO2. Save to history or export as PDF, CSV or quick text.</span></figcaption></figure>
-          <figure class="screen-card"><img src="../assets/images/IET-BleepTestShareEmail.png" width="1170" height="2532" loading="lazy" alt="Inside Edge Timing bleep test PDF report attached to an email in the iOS share workflow"><figcaption><strong>Print, save or send</strong><span>Create a clear ranked PDF report, preview it and use the iOS share sheet to email it, print it, save it to Files or pass it to another compatible app.</span></figcaption></figure>
-        </div>
-
-        <div class="test-detail-grid">
-          <article><p class="card-kicker">Protocol built in</p><h3>No separate audio track or manual level chart.</h3><p>The app calculates all 21 levels and 20-metre shuttle timings, gives one cue per shuttle and a triple cue at each new level, and keeps the display awake while the test runs.</p></article>
-          <article><p class="card-kicker">Multiple athletes</p><h3>Record each participant at the point their test ends.</h3><p>Manage up to four athletes together. Mark a first miss as a warning; a second miss records the athlete at the last successfully completed shuttle. A dedicated Stop &amp; Record control remains available for coach-led decisions.</p></article>
-          <article><p class="card-kicker">Age-aware context</p><h3>Turn the final speed into an estimated VO2 max.</h3><p>For athletes aged 8&ndash;19, the app uses the L&eacute;ger age-aware equation. Adult results use the L&eacute;ger speed-based estimate. Every report identifies the method used and presents VO2 as an estimate, alongside the directly observed test score.</p></article>
-          <article><p class="card-kicker">Record and report</p><h3>Save the session, review it later and share it your way.</h3><p>Fitness Test History keeps completed sessions on the device. Produce a presentation-ready PDF report, a CSV file for analysis and record keeping, or quick text for messages and notes; use the iOS share sheet to print, save or send.</p></article>
-        </div>
-
-        <div class="protocol-note"><strong>Field-test note:</strong> The 20m MSFT is a maximal, progressive running test. Use an accurately measured, flat, non-slip 20-metre course with clear turning lines, appropriate warm-up and supervision. Estimated VO2 is useful for fitness monitoring but is not a direct laboratory measurement or medical assessment.</div>
-      </div>
-    </section>
+    <section class="section white" id="modes"><div class="wrap"><div class="section-heading"><p class="eyebrow">Four focused modes</p><h2>Choose the job. Open the right tool.</h2><p>Go directly to the timing or testing workflow that matters.</p></div><div class="timing-mode-links"><a class="feature-panel feature-panel-dark" href="intervals/"><p class="card-kicker">Intervals Timer</p><h3>Build and run structured sessions.</h3><p>Create named sets with individual work, recovery, rest and audible beat patterns.</p><strong>Explore Intervals &rarr;</strong></a><a class="feature-panel" href="splits/"><p class="card-kicker">Splits Timer</p><h3>Capture successive training splits.</h3><p>Keep split and cumulative times together, add notes, then save or share.</p><strong>Explore Splits &rarr;</strong></a><a class="feature-panel" href="race/"><p class="card-kicker">Race Timer</p><h3>Prepare, capture and assign finish order.</h3><p>Build a start list, record finishers and preserve total times and gaps.</p><strong>Explore Race mode &rarr;</strong></a><a class="feature-panel feature-panel-test" href="fitness-tests/"><p class="card-kicker">Fitness Tests</p><h3>Run and report the L&eacute;ger 20m MSFT.</h3><p>Guide up to four athletes with built-in timings, cues, scoring and reports.</p><strong>Explore Fitness Tests &rarr;</strong></a></div></div></section>
 
     <section class="section screenshot-section" id="screenshots">
       <div class="wrap">
-        <div class="section-heading"><p class="eyebrow">App screenshots</p><h2>Real screens from the current build.</h2><p>Inside Edge Timing is designed around fast, readable views: a large interval countdown, a clean splits timer and a race timer that can record finish order under real event pressure.</p></div>
+        <div class="section-heading"><p class="eyebrow">App screenshots</p><h2>Real screens from the current build.</h2><p>Select a screen to explore that focused timing or testing mode.</p></div>
         <div class="screen-showcase" aria-label="Inside Edge Timing screenshots">
-          <figure class="screen-card"><img src="../assets/images/IET-IntervalsTimerScreen.png" width="831" height="1800" loading="lazy" alt="Intervals Timer screen showing a 45 second interval countdown"><figcaption><strong>Intervals Timer</strong><span>Large countdown, current set, interval number, beat control and session progress.</span></figcaption></figure>
-          <figure class="screen-card"><img src="../assets/images/IET-SplitsTimerScreen.png" width="831" height="1800" loading="lazy" alt="Splits Timer screen showing saved training splits"><figcaption><strong>Splits Timer</strong><span>Capture repeated splits, add notes and save or share the training record.</span></figcaption></figure>
-          <figure class="screen-card"><img src="../assets/images/IET-RaceTimerScreen1.png" width="831" height="1800" loading="lazy" alt="Race Timer screen showing competition details and finish order"><figcaption><strong>Race Timer setup</strong><span>Competition, date, distance, race number, cached roster status and live finish capture.</span></figcaption></figure>
-          <figure class="screen-card"><img src="../assets/images/IET-RaceTimerScreen2.png" width="831" height="1800" loading="lazy" alt="Race Timer screen showing saved race finish order"><figcaption><strong>Finish order</strong><span>Record 1st, 2nd, 3rd and later finishers with race numbers, names, times and gaps.</span></figcaption></figure>
+          <figure class="screen-card"><a href="intervals/"><img src="../assets/images/IET-IntervalsTimerScreen.png" width="831" height="1800" loading="lazy" alt="Intervals Timer screen showing a 45 second interval countdown"></a><figcaption><strong>Intervals Timer</strong><span>Large countdown, current set, interval number, beat control and session progress.</span></figcaption></figure>
+          <figure class="screen-card"><a href="splits/"><img src="../assets/images/IET-SplitsTimerScreen.png" width="831" height="1800" loading="lazy" alt="Splits Timer screen showing saved training splits"></a><figcaption><strong>Splits Timer</strong><span>Capture repeated splits, add notes and save or share the training record.</span></figcaption></figure>
+          <figure class="screen-card"><a href="race/"><img src="../assets/images/IET-Race-Live-2026.png" width="900" height="1947" loading="lazy" alt="Live Race Timer showing finishers, times and gaps"></a><figcaption><strong>Race Timer</strong><span>Prepare the field, capture finish order, then assign and review.</span></figcaption></figure>
+          <figure class="screen-card"><a href="fitness-tests/"><img src="../assets/images/IET-BleepTestInAction.png" width="1170" height="2532" loading="lazy" alt="Léger 20m multistage fitness test running"></a><figcaption><strong>Fitness Tests</strong><span>Guide and record the L&eacute;ger 20m MSFT from one screen.</span></figcaption></figure>
         </div>
       </div>
     </section>
 
-    <section class="section white walkthrough-section" id="walkthrough">
-      <div class="wrap">
-        <div class="section-heading walkthrough-heading"><p class="eyebrow">How Inside Edge Timing works</p><h2>One practical workflow, from the first instruction to the saved result.</h2><p>Each timer has its own state, controls and notes, so moving between modes does not mix one activity with another.</p></div>
-        <div class="walkthrough-list">
-          <article class="walkthrough-item"><div class="walkthrough-image"><img src="../assets/images/iet-interval-coaching.jpg" loading="lazy" alt="Coach running a timed skating interval at rinkside"></div><div class="walkthrough-copy"><span class="walkthrough-number">01</span><p class="card-kicker">Plan and run the work</p><h3>Turn a coaching plan into a session athletes can follow.</h3><p>Build a workout from named sets, each with its own repetitions, work time, recovery time and set rest. Save the structure for repeat use.</p><p>A large countdown and clear phases make instructions readable at a glance. Audible beats hold a rhythm or prompt a change of pace, while progress tracks the current set and whole session.</p><ul class="walkthrough-points"><li>Mix several work and recovery patterns</li><li>Change beat guidance live</li><li>Record effort, notes and heart-rate context</li></ul></div></article>
-          <article class="walkthrough-item"><div class="walkthrough-image"><img src="../assets/images/iet-split-capture.jpg" loading="lazy" alt="Coach capturing an athlete split time beside an indoor track"></div><div class="walkthrough-copy"><span class="walkthrough-number">02</span><p class="card-kicker">Capture the detail</p><h3>Collect repeatable split times without interrupting the session.</h3><p>Start the dedicated training stopwatch, then record every lap, effort or athlete crossing the timing point. Each capture keeps split and cumulative time together.</p><p>The large digital or analog display stays legible while the coach watches the action. Add notes, then save or share the record. Its timer and notes are independent from Race Timer.</p><ul class="walkthrough-points"><li>Tall digital readout for rinkside visibility</li><li>Splits and cumulative times in capture order</li><li>Training notes kept separate from race details</li></ul></div></article>
-          <article class="walkthrough-item"><div class="walkthrough-image"><img src="../assets/images/iet-race-finish.jpg" loading="lazy" alt="Race official recording finish order as skaters cross the line"></div><div class="walkthrough-copy"><span class="walkthrough-number">03</span><p class="card-kicker">Record the race</p><h3>Capture finish order first, then complete the result quickly.</h3><p>Enter competition, date, distance and race number. Start with the race and tap Record Finisher at the line. The app preserves order, assigns placings and calculates total time and the gap to the winner.</p><p>A locally cached roster can fill in athlete details even when connectivity is poor, refreshing only when its source changes. A repeated athlete number requires confirmation.</p><ul class="walkthrough-points"><li>Standard or custom race distance</li><li>Manual entry always remains available</li><li>Correct details without losing captured time</li></ul></div></article>
-          <article class="walkthrough-item"><div class="walkthrough-image"><img src="../assets/images/iet-results-review.jpg" loading="lazy" alt="Coach and organiser reviewing timing results together on an iPad"></div><div class="walkthrough-copy"><span class="walkthrough-number">04</span><p class="card-kicker">Save, review and share</p><h3>Keep the result useful after the clock has stopped.</h3><p>Races are identified by competition, date, distance and race number. The app warns before replacing a match, then can advance the race number for the next event.</p><p>History keeps interval reports, split sessions and race results on the device. Share one record through iOS or export a wider competition report. No Inside Edge account is required.</p><ul class="walkthrough-points"><li>Return to local history</li><li>Share one result or a competition group</li><li>Keep working without reliable internet</li></ul></div></article>
-        </div>
-        <div class="local-first-panel"><div><p class="eyebrow">Local-first by design</p><h2>Your timing work stays available where you need it.</h2></div><div class="local-first-grid"><p><strong>No account</strong><span>Open the app and start timing.</span></p><p><strong>On-device history</strong><span>Saved work remains locally available.</span></p><p><strong>Resilient roster</strong><span>The last good race-number list is cached.</span></p></div></div>
-      </div>
-    </section>
 
-    <section class="section white" id="features">
-      <div class="wrap">
-        <div class="section-heading"><p class="eyebrow">Four focused modes</p><h2>Choose the job. Start the clock.</h2><p>Inside Edge Timing keeps each workflow clear: build workouts, capture training splits, record race finishers or conduct a structured 20m multistage fitness test.</p></div>
-        <div class="feature-grid timing-mode-grid">
-          <article class="feature-panel feature-panel-dark">
-            <p class="card-kicker">Intervals Timer</p>
-            <h3>Structured sessions that go beyond a basic work/rest timer.</h3>
-            <p>Create full training sessions from named sets. Each set can have its own interval count, work duration, recovery duration, set rest and audible beat pattern.</p>
-            <ul class="feature-list"><li>Build sessions such as 4 x 45/45, rest, then 6 x 30/30</li><li>Chain as many sets as the session needs</li><li>Use steady beats, faster beats or slower beats inside work intervals</li><li>Switch live beat prompts between 1s, 5s, 10s, Faster, Slower and Off</li><li>See current set, interval count, next interval and total session progress</li><li>Save completed workout reports with effort score, notes and export</li></ul>
-          </article>
-          <article class="feature-panel">
-            <p class="card-kicker">Splits Timer</p>
-            <h3>A coach-friendly stopwatch for training repetitions.</h3>
-            <p>Use Splits Timer when you need a clean stopwatch with repeated captures: laps, drills, flying efforts, repeated starts or groups crossing a marker at different times.</p>
-            <ul class="feature-list"><li>Large digital or analog stopwatch display</li><li>Capture split and cumulative time in a session independent from Race Timer</li><li>Add quick notes to recorded splits</li><li>Save and share completed split sessions</li><li>Designed for iPhone and iPad use at rinkside, trackside or courtside</li></ul>
-          </article>
-          <article class="feature-panel">
-            <p class="card-kicker">Race Timer</p>
-            <h3>Finish-order recording for real event pressure.</h3>
-            <p>Race Timer is built for the practical manual timing situations many clubs still rely on: start the race, tap each finisher, add race numbers, then save or share the result before the next race rolls around.</p>
-            <ul class="feature-list"><li>Record 1st, 2nd, 3rd and later finishers in order</li><li>Show total race time and gap to the winner</li><li>Store competition, date, distance and race number with every race</li><li>Auto-fill skater details from a locally cached race-number list, even when the connection is unavailable</li><li>Warn before recording the same athlete number twice, with an explicit Record Again option</li><li>Save races locally, auto-advance race numbers and export race or competition history</li></ul>
-          </article>
-          <article class="feature-panel feature-panel-test">
-            <p class="card-kicker">Fitness Tests</p>
-            <h3>Run and document the L&eacute;ger 20m MSFT with confidence.</h3>
-            <p>Guide up to four athletes through the progressive shuttle test with automatic timings, clear audio cues, live scoring and individual stop-and-record controls.</p>
-            <ul class="feature-list"><li>Standard 20m L&eacute;ger protocol across 21 levels</li><li>8.5 km/h starting speed, increasing 0.5 km/h per level</li><li>Live level, shuttle, speed, elapsed time and distance</li><li>First-miss warning and second-miss result capture</li><li>Age-aware youth and speed-based adult VO2 estimates</li><li>On-device history plus PDF, CSV and text export</li></ul>
-          </article>
-        </div>
-      </div>
-    </section>
 
     <section class="section origin-section">
       <div class="wrap split-copy origin-grid">
@@ -158,17 +86,6 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="section-heading"><p class="eyebrow">Race-day workflow</p><h2>Built for the two-minute gap before the next race.</h2></div>
-        <ol class="steps">
-          <li><span>01</span><div><h3>Prepare the event</h3><p>Enter the competition name, date and race distance once. Race Timer keeps that context available while you move through the programme.</p></div></li>
-          <li><span>02</span><div><h3>Start and capture</h3><p>Start the clock, then tap Record Finisher as each athlete crosses the line. The app keeps finish order, total time and gaps together.</p></div></li>
-          <li><span>03</span><div><h3>Add skater details quickly</h3><p>Type the race number and, where the cached roster matches, the app fills in name, category and club. If that number is already recorded in the race, confirm before recording the athlete again.</p></div></li>
-          <li><span>04</span><div><h3>Save and move on</h3><p>Save the race, let the race number advance, then share a single race or export the wider competition group when needed.</p></div></li>
-        </ol>
-      </div>
-    </section>
 
     <section class="section white">
       <div class="wrap release-grid">
