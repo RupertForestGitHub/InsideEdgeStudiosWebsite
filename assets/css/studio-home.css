@@ -22,8 +22,8 @@
 .studio-product-highlights i{padding:0 .16rem;color:var(--red);font-style:normal}
 .studio-home-hero h1 span{display:block;white-space:nowrap}
 .studio-home-actions{margin-top:0}
-.studio-apps+.tester-section{padding-bottom:0}
-.studio-apps+.tester-section+.studio-why{padding-top:clamp(2.25rem,4vw,3.5rem)}
+.studio-home-page .tester-section{padding-bottom:0}
+.studio-home-page .studio-why{padding-top:clamp(2.25rem,4vw,3.5rem)}
 @media(min-width:761px){
   .studio-home-hero h1{font-size:clamp(2.8rem,4.7vw,4.35rem)}
   .studio-app-grid{grid-template-columns:1fr;gap:1rem}
